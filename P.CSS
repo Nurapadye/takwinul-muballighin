@@ -1,47 +1,36 @@
-/* Custom Styles */
-:root {
-    --primary: #064e3b;
-    --gold: #b8860b;
-}
+:root { --primary: #064e3b; --gold: #b8860b; }
+body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+.serif-title { font-family: 'Playfair Display', serif; }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
-}
-
-.serif-title {
-    font-family: 'Playfair Display', serif;
-}
-
-/* PERBAIKAN GAMBAR AGAR NGEPAS */
+/* GAMBAR BACKGROUND NGEPAS */
 .hero-section {
-    background: linear-gradient(rgba(6, 78, 59, 0.7), rgba(0, 0, 0, 0.5)), url('AQ.jpeg');
+    background: linear-gradient(rgba(6, 78, 59, 0.65), rgba(0, 0, 0, 0.65)), url('AQ.jpeg');
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed; /* Membuat efek paralaks keren di laptop */
+    background-repeat: no-repeat;
 }
 
-/* Navbar Scrolled Effect */
-.nav-scrolled {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    padding-top: 0.75rem !important;
-    padding-bottom: 0.75rem !important;
+@media (min-width: 769px) {
+    .hero-section { background-attachment: fixed; }
 }
 
-/* Mobile Menu Positioning */
-#mobile-menu {
-    transform: translateX(100%);
-}
-
-#mobile-menu.active {
-    transform: translateX(0);
-}
-
-/* Penyesuaian gambar di HP agar tidak gepeng */
 @media (max-width: 768px) {
-    .hero-section {
-        background-attachment: scroll; /* Matikan paralaks di HP agar tidak berat */
-        background-position: center top;
-    }
+    .hero-section { min-height: 100vh; }
+    .nav-text { color: white !important; }
 }
+
+/* Navbar Efek Scroll */
+.nav-scrolled {
+    background: white !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.nav-scrolled .nav-text, 
+.nav-scrolled .nav-link a, 
+.nav-scrolled #open-menu {
+    color: #064e3b !important;
+}
+
+#mobile-menu.active { transform: translateX(0); }
