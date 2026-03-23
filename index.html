@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takwinul Muballighin | Kader Muballigh Yogyakarta</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="P.CSS">
 </head>
@@ -14,18 +14,17 @@
     <nav id="main-nav" class="fixed w-full z-50 transition-all duration-500 px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <img src="z.jpg" alt="Logo" class="w-10 h-10 rounded-full shadow-lg border-2 border-yellow-600">
-                <span class="serif-title text-xl text-emerald-950 tracking-wider">Takwinul Muballighin</span>
+                <img src="z.jpg" alt="Logo" class="w-10 h-10 rounded-full border-2 border-yellow-600">
+                <span class="serif-title text-xl text-white tracking-wider transition-colors nav-text">Takwinul Muballighin</span>
             </div>
             
-            <div class="hidden md:flex gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-emerald-900">
-                <a href="#beranda" class="hover:text-yellow-600">Beranda</a>
-                <a href="#profil" class="hover:text-yellow-600">Profil</a>
-                <a href="#warta" class="hover:text-yellow-600">Warta</a>
-                <a href="#kontak" class="hover:text-yellow-600 underline decoration-yellow-600 underline-offset-8">Hubungi Kami</a>
+            <div class="hidden md:flex gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-white nav-link">
+                <a href="#beranda" class="hover:text-yellow-500">Beranda</a>
+                <a href="#warta" class="hover:text-yellow-500">Warta</a>
+                <a href="#kontak" class="hover:text-yellow-500">Hubungi Kami</a>
             </div>
 
-            <button id="open-menu" class="md:hidden text-emerald-900 text-2xl"><i class="fas fa-bars"></i></button>
+            <button id="open-menu" class="md:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
 
@@ -33,20 +32,16 @@
         <div class="z-10 max-w-4xl">
             <span class="text-yellow-500 font-bold tracking-[0.4em] text-xs uppercase mb-6 block">Kaderisasi Muballigh Muda</span>
             <h1 class="serif-title text-5xl md:text-8xl text-white mb-8 leading-tight">Mencetak Da'i <br><span class="italic text-yellow-500">Berakhlak Karimah</span></h1>
-            <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-                <a href="#warta" class="bg-yellow-600 text-white px-10 py-4 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-yellow-700 transition shadow-2xl">Lihat Kegiatan</a>
-            </div>
+            <a href="#warta" class="inline-block bg-yellow-600 text-white px-10 py-4 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-yellow-700 transition shadow-2xl">Lihat Kegiatan</a>
         </div>
     </section>
 
     <section id="warta" class="py-24 px-6 bg-slate-50">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h3 class="serif-title text-4xl text-emerald-950">Warta Terkini</h3>
-                <div class="w-16 h-1 bg-yellow-600 mx-auto mt-4"></div>
-            </div>
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="serif-title text-4xl text-emerald-950 mb-4">Warta Terkini</h3>
+            <div class="w-16 h-1 bg-yellow-600 mx-auto mb-16"></div>
             <div id="warta-container" class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <p class="text-center col-span-full text-gray-400 italic">Memuat berita...</p>
+                <p class="text-gray-400 italic col-span-full">Memuat berita...</p>
             </div>
         </div>
     </section>
@@ -54,41 +49,26 @@
     <footer id="kontak" class="bg-emerald-950 text-white py-20 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
-                <h4 class="serif-title text-2xl mb-6">Takwinul <br>Muballighin</h4>
-                <p class="text-gray-400 text-sm leading-loose">Lembaga pendidikan pencetak kader muballigh yang fokus pada penguatan dakwah dan akhlak di tengah masyarakat.</p>
+                <h4 class="serif-title text-2xl mb-4">Takwinul Muballighin</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Lembaga pendidikan dakwah di Yogyakarta.</p>
             </div>
             <div>
-                <h5 class="font-bold text-yellow-500 uppercase text-[10px] tracking-widest mb-6">Navigasi</h5>
-                <ul class="space-y-4 text-sm text-gray-300">
-                    <li><a href="#beranda" class="hover:text-white">Beranda</a></li>
-                    <li><a href="#profil" class="hover:text-white">Profil Pondok</a></li>
-                    <li><a href="https://wa.me/628123456789" class="hover:text-white">Pendaftaran Online</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-bold text-yellow-500 uppercase text-[10px] tracking-widest mb-6">Ikuti Media Sosial Kami</h5>
+                <h5 class="font-bold text-yellow-500 uppercase text-[10px] tracking-[0.2em] mb-6">Sosial Media</h5>
                 <div class="flex gap-6 text-2xl">
-                    <a href="#" class="hover:text-yellow-500 transition"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="hover:text-yellow-500 transition"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="hover:text-yellow-500 transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="hover:text-yellow-500"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-yellow-500"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-yellow-500"><i class="fab fa-youtube"></i></a>
                 </div>
-                <p class="text-[10px] mt-10 text-gray-500 tracking-[0.2em] uppercase">© 2026 Takwinul Muballighin Yogyakarta</p>
             </div>
         </div>
     </footer>
 
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col p-10 transition-transform duration-500 md:hidden">
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col p-10 transition-transform duration-500 md:hidden translate-x-full">
         <button id="close-menu" class="text-3xl self-end text-emerald-950">&times;</button>
         <div class="flex flex-col gap-8 mt-10 text-2xl serif-title text-emerald-950">
             <a href="#beranda" onclick="closeM()">Beranda</a>
-            <a href="#profil" onclick="closeM()">Profil</a>
             <a href="#warta" onclick="closeM()">Warta</a>
             <a href="#kontak" onclick="closeM()">Kontak</a>
-        </div>
-        <div class="mt-auto flex gap-6 text-3xl text-emerald-900 border-t pt-8">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
 
