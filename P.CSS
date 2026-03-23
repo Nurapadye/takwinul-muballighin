@@ -1,0 +1,67 @@
+:root { 
+    --primary: #064e3b; 
+    --gold: #b8860b; 
+}
+
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #ffffff; 
+    color: #1a1a1a; 
+    overflow-x: hidden; 
+    scroll-behavior: smooth; 
+}
+
+.serif-title { 
+    font-family: 'Playfair Display', serif; 
+}
+
+.history-font { 
+    font-family: 'Lora', serif; 
+}
+
+/* Transisi halus untuk semua elemen */
+* { 
+    transition: all 0.3s ease-in-out; 
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('AQ.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Drop Cap Customization */
+.drop-cap::first-letter {
+    font-size: 3rem;
+    font-weight: 900;
+    float: left;
+    margin-right: 8px;
+    line-height: 1;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+}
+
+@media (min-width: 768px) {
+    .drop-cap::first-letter { 
+        font-size: 4rem; 
+        margin-right: 12px; 
+    }
+}
+
+/* Mobile Menu State */
+#mobile-menu { 
+    transform: translateX(100%); 
+}
+
+#mobile-menu.active { 
+    transform: translateX(0); 
+}
+
+/* Navbar Style on Scroll */
+.nav-scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takwinul Muballighin | YAIFY Yogyakarta</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="P.CSS">
+</head>
+<body>
+
+    <nav id="main-nav" class="fixed w-full z-[100] py-3 md:py-4 px-4 md:px-16 flex justify-between items-center transition-all duration-500">
+        <div class="flex items-center gap-2 md:gap-3">
+            <img src="z.png" alt="Logo" class="h-8 md:h-12 w-auto">
+            <div>
+                <h1 class="text-[10px] md:text-sm font-black text-emerald-950 uppercase tracking-tighter leading-none">Takwinul Muballighin</h1>
+                <p class="text-[6px] md:text-[8px] font-bold text-gray-400 tracking-widest mt-0.5 uppercase">YAIFY Yogyakarta</p>
+            </div>
+        </div>
+
+        <ul class="hidden lg:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-600 items-center">
+            <li><a href="#beranda" class="hover:text-emerald-900">Beranda</a></li>
+            <li><a href="#sejarah" class="hover:text-emerald-900">Sejarah</a></li>
+            <li><a href="#warta" class="hover:text-emerald-900">Warta</a></li>
+            <li><a href="#lokasi" class="hover:text-emerald-900">Lokasi</a></li>
+            <li>
+                <a href="https://wa.me/628123456789" class="bg-emerald-900 text-white px-5 py-2 rounded-full hover:bg-emerald-700 flex items-center gap-2 shadow-lg">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Daftar</span>
+                </a>
+            </li>
+        </ul>
+
+        <button id="open-menu" class="lg:hidden text-2xl text-emerald-900 p-2">
+            <i class="fas fa-bars-staggered"></i>
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[110] flex flex-col p-8 lg:hidden shadow-2xl transition-transform duration-500">
+        <button id="close-menu" class="self-end text-3xl text-emerald-900 mb-8 p-2"><i class="fas fa-times"></i></button>
+        <div class="flex flex-col gap-6 text-xl font-bold text-emerald-950 serif-title">
+            <a href="#beranda" class="mobile-link">Beranda</a>
+            <a href="#sejarah" class="mobile-link">Sejarah</a>
+            <a href="#warta" class="mobile-link">Warta</a>
+            <a href="#lokasi" class="mobile-link">Lokasi Maps</a>
+            <a href="https://wa.me/628123456789" class="text-emerald-700 flex items-center gap-3">
+                <i class="fab fa-whatsapp"></i> Daftar Sekarang
+            </a>
+        </div>
+        <div class="mt-auto flex gap-6 text-2xl text-emerald-900 border-t pt-6">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <header id="beranda" class="hero-section flex items-center justify-center text-center px-6">
+        <div class="max-w-4xl">
+            <h4 class="text-yellow-500 font-bold tracking-[0.2em] md:tracking-[0.6em] uppercase text-[9px] md:text-xs mb-4">Pusat Pengkaderan Da'i</h4>
+            <h2 class="serif-title text-white text-4xl md:text-7xl lg:text-8xl mb-6 leading-tight drop-shadow-2xl">Takwinul <br class="hidden md:block"> Muballighin</h2>
+            <div class="w-12 md:w-20 h-1 bg-yellow-600 mx-auto mb-8"></div>
+            <p class="text-white/90 text-sm md:text-xl font-light italic tracking-wide max-w-2xl mx-auto leading-relaxed">
+                "Mencetak Kader Muballigh Profesional yang Siap Berkhidmat untuk Umat."
+            </p>
+        </div>
+    </header>
+
+    <section id="sejarah" class="py-16 md:py-32 bg-white px-6 md:px-10 lg:px-20">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10 md:mb-16">
+                <span class="text-emerald-800 font-bold tracking-widest text-[10px] uppercase">Profil Pondok</span>
+                <h3 class="serif-title text-3xl md:text-5xl lg:text-6xl text-emerald-950 mt-2 mb-4">Sejarah Singkat</h3>
+                <div class="w-16 h-1 bg-yellow-600 mx-auto"></div>
+            </div>
+            
+            <div class="history-font text-base md:text-xl lg:text-2xl text-gray-700 leading-relaxed md:leading-[2] text-justify space-y-8">
+                <p class="drop-cap">
+                    Pondok Pesantren <strong class="text-emerald-900">Takwinul Muballighin</strong> berdiri atas dasar keprihatinan terhadap dunia dakwah Islam. Semangat umat Islam untuk mempelajari, mengamalkan, dan memperjuangkan nilai-nilai Islam semakin meningkat, namun jumlah da’i/muballigh yang tersedia tidak seimbang dengan kebutuhan dakwah.
+                </p>
+                <div class="bg-slate-50 p-6 md:p-12 rounded-2xl md:rounded-[40px] border-l-[8px] md:border-l-[15px] border-emerald-900 my-8 shadow-sm text-left">
+                    <p class="italic text-emerald-950 text-lg md:text-2xl font-bold leading-snug">
+                        "Atas dasar inilah YAIFY mendirikan Pondok Pesantren Takwinul Muballighin sebagai pusat pengkaderan muballigh yang siap berkiprah di masyarakat."
+                    </p>
+                </div>
+                <p>
+                    Kini, kami berkomitmen untuk melahirkan generasi yang tidak hanya mahir secara retorika, tetapi juga memiliki kedalaman ilmu syar'i dan akhlakul karimah.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="warta" class="py-16 md:py-24 bg-gray-50 border-t border-b">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="serif-title text-3xl md:text-4xl text-emerald-950">Warta & Dokumentasi</h3>
+                <div class="w-12 h-1 bg-yellow-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col items-center justify-center py-12 text-center">
+                <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-900 mb-4 shadow-inner">
+                    <i class="fas fa-newspaper text-xl"></i>
+                </div>
+                <p class="text-gray-400 italic text-sm md:text-base tracking-widest uppercase">Belum ada warta terbaru.<br>Nantikan informasi kegiatan kami segera.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lokasi" class="py-16 md:py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-10">
+                <h3 class="serif-title text-3xl md:text-4xl text-emerald-950">Lokasi Pondok</h3>
+                <div class="w-12 h-1 bg-yellow-600 mx-auto mt-4"></div>
+                <p class="text-gray-500 mt-4 text-xs md:text-base max-w-md mx-auto">Gg. Masjid, Gandok, Condongcatur, Kec. Depok, Kabupaten Sleman, DIY</p>
+            </div>
+            
+            <div class="rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl h-[300px] md:h-[500px] border border-gray-100">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126514.88725841773!2d110.32353396860048!3d-7.727022240973656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a593361099689%3A0x62955373a7c6f059!2sCondongcatur%2C%20Depok%2C%20Sleman%20Regency%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1700000000000" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="#" target="_blank" class="inline-block bg-emerald-900 text-white px-8 py-3 rounded-full font-bold hover:bg-emerald-700 transition tracking-widest text-[10px] uppercase shadow-lg">
+                    Buka Google Maps <i class="fas fa-location-arrow ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-emerald-950 text-white py-12 md:py-20 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="z.png" alt="Logo" class="h-12 md:h-16 mb-6 brightness-0 invert opacity-70">
+                <p class="text-emerald-100/40 text-xs md:text-sm leading-relaxed italic max-w-xs">Mencetak kader muballigh yang bertaqwa dan profesional di Yogyakarta.</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-yellow-500 uppercase text-[10px] tracking-widest mb-6">Navigasi</h5>
+                <ul class="text-xs md:text-sm space-y-4 opacity-70">
+                    <li><a href="#beranda" class="hover:text-white">Beranda</a></li>
+                    <li><a href="#sejarah" class="hover:text-white">Sejarah</a></li>
+                    <li><a href="#lokasi" class="hover:text-white">Lokasi Maps</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-center md:items-start">
+                <h5 class="font-bold text-yellow-500 uppercase text-[10px] tracking-widest mb-6">Kontak</h5>
+                <p class="text-xs md:text-sm opacity-70 mb-6 uppercase tracking-tighter leading-relaxed">Gg. Masjid, Condongcatur, Yogyakarta</p>
+                <a href="https://wa.me/628123456789" class="bg-white/10 px-6 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-white/20 flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i> Chat Admin
+                </a>
+            </div>
+        </div>
+        <div class="text-center mt-16 pt-8 border-t border-white/5 text-[7px] md:text-[9px] tracking-[0.4em] opacity-30 uppercase">
+            © 2026 Takwinul Muballighin | YAIFY Yogyakarta
+        </div>
+    </footer>
+
+    <script src="P.JS"></script>
+</body>
+</html>
